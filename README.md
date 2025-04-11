@@ -43,7 +43,7 @@ ratelimiter.Config{
 ### 📦 Install
 
 ```bash
-go get github.com/yourusername/ratelimiter
+go get github.com/amallick86/ratelimiter
 ```
 
 ---
