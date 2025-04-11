@@ -8,6 +8,8 @@ type Limiter struct {
 	config  Config
 }
 
+var _ RateLimiter = (*Limiter)(nil) // compile-time type checking vi
+
 func NewLimiter(config Config) *Limiter {
 	return &Limiter{
 		buckets: make(map[string]*Bucket),
